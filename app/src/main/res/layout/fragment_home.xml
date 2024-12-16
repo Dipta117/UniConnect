@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="1dp"
+    android:background="@drawable/a">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+
+            android:src="@drawable/un"
+        />
+        <!-- Post Box Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="12dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+           >
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/profile"
+                android:contentDescription="Profile Picture" />
+
+            <!-- Plus Icon for Uploading Image -->
+<!--            <ImageView-->
+<!--                android:id="@+id/plusIcon"-->
+<!--                android:layout_width="40dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginEnd="12dp"-->
+<!--                android:src="@drawable/upload"-->
+<!--                android:contentDescription="Upload Image"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true" />-->
+
+            <!-- Post EditText -->
+            <EditText
+                android:id="@+id/postEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/grey"
+                android:hint="What's on your mind?"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:minHeight="50dp"
+                android:padding="10dp"
+                android:background="@color/light_grey"
+                android:textColor="@android:color/black" />
+
+            <!-- Post Button -->
+            <Button
+                android:id="@+id/postButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:textColor="@android:color/white"
+                android:background="@color/blue" />
+        </LinearLayout>
+
+        <!-- RecyclerView for displaying posts -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

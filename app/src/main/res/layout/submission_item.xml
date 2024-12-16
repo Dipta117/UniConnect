@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bordered_box"
+    android:layout_marginBottom="4dp"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/submissionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submission"
+android:background="@color/yellow"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/linkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="web"
+        android:padding="8dp"
+        android:text="link"
+        android:textColor="@color/link_color"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/marksEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:hint="Enter marks"
+        android:layout_marginBottom="4dp"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/giveMarksButton"
+        android:layout_width="wrap_content"
+        android:background="@color/blue"
+        android:layout_height="wrap_content"
+        android:text="OK" />
+
+
+    <TextView
+        android:id="@+id/obtainedMarksTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="italic"
+
+        />
+</LinearLayout>

@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header Section for Group Image, Name, and Description -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="start"
+        android:background="@color/white">
+
+        <!-- Group Image -->
+        <ImageView
+            android:id="@+id/groupImageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/grpp"
+            android:contentDescription="Group Image"
+            android:clickable="true"
+            android:focusable="true"
+            android:scaleType="centerCrop" />
+
+        <!-- Group Name and Description -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/groupNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group Name"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:background="@color/yellow"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="@android:color/holo_purple" />
+            <TextView
+                android:id="@+id/groupmembernumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group members"
+
+                android:textSize="18sp"
+                android:fontFamily="@font/roboto_mono_bold"
+                android:textColor="@color/blue" />
+        </LinearLayout>
+
+
+
+        <!-- 3-Dot Menu ImageView -->
+        <ImageView
+            android:id="@+id/menuImageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:clickable="true"
+            android:contentDescription="Menu"
+            android:focusable="true"
+            android:padding="8dp"
+            android:src="@drawable/three_dots_svgrepo_com" />
+
+    </LinearLayout>
+
+    <!-- TabLayout and ViewPager2 (as before) -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabIndicatorColor="@color/blue"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/TabTextStyle"
+        app:tabTextColor="@color/white"
+        app:tabBackground="@drawable/tab_background_selector" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

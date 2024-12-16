@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:elevation="4dp"
+
+    android:radius="15dp"
+    android:padding="12dp">
+
+    <!-- Post Content Layout -->
+    <LinearLayout
+
+        android:padding="8dp"
+        android:orientation="vertical"
+        android:background="@drawable/bordered_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- User Profile and Name -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical">
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/postProfilePicture"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/pen"
+                 />
+
+            <!-- User Name and Menu -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/userNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/roboto_mono_bold"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/menuImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="8dp"
+                android:src="@drawable/three_dots_svgrepo_com"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- Post Content -->
+        <TextView
+            android:id="@+id/postTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This is a sample post content."
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="8dp" />
+
+        <!-- Edit Post Content (Initially Hidden) -->
+        <EditText
+            android:id="@+id/editPostEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit your post"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:background="@color/light_grey"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/savePostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/blue"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <!-- Post Actions (Comment Button) -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center_vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- Comment Button -->
+            <Button
+                android:id="@+id/commentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comments"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@color/blue" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

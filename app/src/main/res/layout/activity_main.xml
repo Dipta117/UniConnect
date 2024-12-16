@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/b">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <!-- Email Input -->
+    <EditText
+        app:cornerRadius="8dp"
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textColorHint="@color/white"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:background="#38ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold" />
+
+    <!-- Password Input -->
+    <EditText
+        app:cornerRadius="8dp"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="#38ffffff"
+        android:padding="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold" />
+
+
+
+    <AutoCompleteTextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:id="@+id/institution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Institution"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:background="#38ffffff"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:dropDownHeight="200dp"
+        android:dropDownVerticalOffset="5dp"/>
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/loginButton"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/roboto_mono_bold"
+        android:text="LOG IN"
+        android:textColor="@android:color/white"
+android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="8dp" />
+
+    <!-- OR Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Horizontal Layout for Sign Up and Register Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <!-- Sign Up Button -->
+        <Button
+            android:textSize="18dp"
+            app:cornerRadius="8dp"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:id="@+id/signUpButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:text="SIGN UP"
+            android:textStyle="bold"
+
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp" />
+        <Button
+            android:textSize="18dp"
+            app:cornerRadius="8dp"
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/blue"
+            android:fontFamily="@font/roboto_mono_bold"
+            android:text="REGISTER"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp" />
+
+        <!-- Register Button -->
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/teacherListFragment"
+
+        android:label="Teachers"
+        tools:layout="@layout/fragment_teacher_list" />
+
+    <fragment
+        android:id="@+id/studentListFragment"
+
+        android:label="Students"
+        tools:layout="@layout/fragment_student_list" />
+
+    <fragment
+        android:id="@+id/groupListFragment"
+
+        android:label="Groups"
+        tools:layout="@layout/fragment_group_list" />
+</navigation>

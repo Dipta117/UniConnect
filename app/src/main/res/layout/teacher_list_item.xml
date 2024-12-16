@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_marginBottom="7dp"
+    android:background="@drawable/bordered_box"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/teacherImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/t"
+            android:layout_marginEnd="8dp"/>
+    <TextView
+        android:id="@+id/teacherName"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+
+        android:text="Teacher name"
+        android:textStyle="bold"
+    android:textColor="#000000"
+    android:padding="4dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/teacherEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/teacherContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/teacherid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text=""
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/dept"
+        android:layout_width="wrap_content"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:text="Department"
+        android:textSize="14sp" />
+</LinearLayout>

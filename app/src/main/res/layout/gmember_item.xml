@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/medium_violet_red"
+    android:elevation="4dp"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordered_box"
+        android:padding="8dp"
+        android:layout_marginTop="3dp"
+
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/studentImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/profile"
+            android:layout_marginEnd="8dp"/>
+        <TextView
+            android:id="@+id/memberName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/memberId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roll/ID"
+            android:textSize="16sp"
+            android:textColor="@android:color/black" />
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

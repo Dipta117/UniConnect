@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="15dp"
+        android:elevation="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:background="@drawable/bordered_box"
+
+            android:layout_height="match_parent">
+
+            <!-- Image View -->
+            <ImageView
+                android:id="@+id/img_url"
+                android:src="@drawable/b"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <!-- Title Text -->
+            <TextView
+                android:padding="15dp"
+                android:id="@+id/txt_title"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Shah Rukh Khan ever cheat on wife Gauri with Priyanka Chopra? Here’s the truth - Asianet Ne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Description Text -->
+            <TextView
+                android:padding="15dp"
+                android:id="@+id/txt_desc"
+                android:textColor="@color/black"
+                android:text="Shah Rukh Khan ever cheat on wife Gauri with Priyanka Chopra? Here’s the truth - Asianet Ne"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!-- Publisher Name -->
+            <TextView
+                android:padding="0dp"
+                android:id="@+id/txt_publisher"
+
+                android:text="Publisher Name"
+                android:textColor="@color/black"
+                android:background="@color/yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="15dp"
+                android:textSize="12sp" />
+
+            <!-- Timestamp -->
+
+
+            <!-- Read More Button -->
+            <Button
+                android:id="@+id/btn_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="#007bff"
+                android:padding="10dp"
+                android:text="Read More"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+
+        <!-- Light theme without Action Bar -->
+
+
+        <!-- Custom Bottom Navigation View style -->
+    <style name="BottomNavigationTheme" parent="Widget.Design.BottomNavigationView">
+        <item name="itemIconTint">@color/white</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+
+
+        <style name="RatingBarTheme">
+            <item name="colorControlActivated">#FFD700</item>
+        </style>
+
+
+
+
+    <!-- Base application theme -->
+        <style name="Base.Theme.UniConnect" parent="Theme.Design.Light.NoActionBar">
+            <!-- General light theme configurations -->
+            <item name="colorPrimary">@color/blue</item>
+            <item name="colorPrimaryVariant">@color/blue</item>
+            <item name="colorSecondary">@color/teal_200</item>
+            <item name="colorOnPrimary">@color/white</item>
+            <item name="android:windowBackground">@color/white</item>
+            <item name="colorOnBackground">@color/white</item>
+            <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+            <item name="android:navigationBarColor">@color/white</item>
+        </style>
+
+        <style name="Theme.UniConnect" parent="Base.Theme.UniConnect" />
+
+        <!-- Bottom Navigation Style -->
+
+
+
+    <!-- Tab text style -->
+    <style name="TabTextStyle">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@android:color/black</item> <!-- Retain black for tab text -->
+    </style>
+
+    <!-- Navigation Drawer Theme -->
+</resources>
